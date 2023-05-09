@@ -8,6 +8,7 @@
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.5rem;
+    box-shadow: rgba(166, 148, 255, 0.35) 0px 5px 15px;
 }
 
 .search p {
