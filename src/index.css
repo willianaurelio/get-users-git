@@ -3,11 +3,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  color: #fff;
+  color: whitesmoke;
 }
 
 body {
-  background-color: #333;
+  background-color: #1b1832;
   padding: 2rem;
 }
 

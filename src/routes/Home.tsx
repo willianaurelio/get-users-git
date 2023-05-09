@@ -1,6 +1,7 @@
 import { UserProps } from "../types/user";
 
 import Search from "../components/Search";
+import User from "../components/User";
 
 import { useState } from 'react';
 
@@ -14,13 +15,23 @@ const Home = () => {
 
         const data = await res.json();
         
-        console.log(data);
+        const { avatar_url, login, location, followers, following } = data;
+
+        const userData: UserProps = {
+            avatar_url,
+            login,
+            location,
+            followers,
+            following
+        };
+
+        setUser(userData)
     }
 
     return <div>
         <div>
             <Search loadUser={loadUser} />
-
+            {user && <User {...user} />}
         </div>
     </div>
 }
